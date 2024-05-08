@@ -44,7 +44,7 @@ public class SkiContestRanker {
         if (numSkiers <= 0) {
             System.out.println("Invalid number of skiers. Exiting program.");
             input.close(); // Close scanner
-            return; // Exit program
+            return; // Exit 
         }
 
         // Arrays to store skiers' names and times
@@ -52,7 +52,7 @@ public class SkiContestRanker {
         double[] skiingTimes = new double[numSkiers];
 
         // Indices for podium positions
-        int[] podiumIndices = {-1, -1, -1}; // Initialized to -1 because no skier data has been recorded yet
+        int[] podiumIndices = {-1, -1, -1}; // because no data has been recorded yet
 
         // Counter for the number of skiers
         int skierCount = 0;
@@ -66,7 +66,7 @@ public class SkiContestRanker {
             // Prompt for skier's time
             System.out.print("Enter skier's time (in seconds): ");
             double time = input.nextDouble();
-            input.nextLine(); // Consume newline left by nextDouble()
+            input.nextLine();
 
             // Add skier's data to arrays
             skierNames[skierCount] = name;
